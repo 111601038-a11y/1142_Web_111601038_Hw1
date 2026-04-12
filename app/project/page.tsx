@@ -1,6 +1,6 @@
 "use client"
 
-import Menu from "@/component/Menu";
+import Menu from "../../component/Menu";
 import Link from "next/link";
 
 export default function ProgrammingProject() {
