@@ -39,7 +39,7 @@ const SECTION_CARD =
 
 export default function About() {
   return (
-    <div className="flex h-full min-h-0 w-full flex-col gap-3 bg-gray-200 p-4">
+    <div className="flex h-full min-h-0 w-full flex-col gap-3 bg-sky-500/25 p-4">
       <h1 className="shrink-0 text-2xl font-bold text-gray-900">關於我</h1>
 
       <div className="min-h-0 flex-1 overflow-y-auto rounded-xl border border-gray-200 bg-white shadow-sm">
