@@ -15,8 +15,8 @@ export default function ProgrammingProject() {
   };
 
   return (
-    <div className="bg-white min-h-full w-full">
-      <div className="h-full w-full bg-white p-3">
+    <div className="min-h-full w-full bg-sky-500/25 p-4">
+      <div className="h-full w-full rounded-xl border border-gray-200 bg-white p-3 shadow-sm">
             <div className="text-[32px] font-bold">設計成果
             </div>
             <div className="text-[16px] text-gray-600 ">That's how we roll</div>

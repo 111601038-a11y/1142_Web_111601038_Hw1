@@ -31,7 +31,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         <Menu />
       </aside>
 
-      <div className="flex min-h-dvh min-w-0 flex-1 flex-col bg-gray-200">
+      <div className="flex min-h-dvh min-w-0 flex-1 flex-col bg-sky-500/25">
         <header className="flex items-center gap-2 border-b border-gray-200 bg-white px-2 py-1.5 sm:hidden">
           <button
             type="button"
@@ -56,7 +56,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           <span className="text-sm font-medium text-gray-700">選單</span>
         </header>
 
-        <main className="min-h-0 flex-1">{children}</main>
+        <main className="min-h-0 flex-1 bg-sky-500/25">{children}</main>
       </div>
 
       {open ? (

@@ -17,13 +17,16 @@ export default function Menu() {
         </Link>
 
         <div className="flex justify-center items-center w-full">
-          <div className="bg-gray-200 w-[125px] h-[125px] rounded-full overflow-hidden flex justify-center items-center">
-            <Image src="/cat.png" alt="cat" width={80} height={80} />
+          <div className="relative h-[125px] w-[125px] shrink-0 overflow-hidden rounded-full bg-gray-200">
+            <Image src="/gothic.png" alt="頭像" fill
+              sizes="125px"
+              className="object-cover object-center"
+              priority
+            />
           </div>
         </div>
 
-        <div className="text-center">名字</div>
-        <div className="text-center">簡介</div>
+        <div className="text-center">呂芃慧</div>
 
         <div className="flex w-full items-center justify-center gap-3">
           <div className="flex items-center">
