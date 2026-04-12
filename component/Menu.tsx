@@ -47,7 +47,7 @@ export default function Menu() {
         </Link>
 
         <Link href="/design">
-          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">設計專案</div>
+          <div className="bg-gray-300 p-[16px] mt-2 rounded-md">設計成果</div>
         </Link>
 
         <Link href="/project">

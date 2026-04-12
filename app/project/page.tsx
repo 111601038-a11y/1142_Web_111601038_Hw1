@@ -6,12 +6,12 @@ export default function ProgrammingProject() {
     },
     "2": {
       "name":"樂器行官網",
-      "imageUrl": "/ins.jpg"
+      "imageUrl": "/poster.jpg"
     },
   };
 
   return (
-    <div className="bg-red-500 min-h-full w-full">
+    <div className="bg-white min-h-full w-full">
       <div className="h-full w-full bg-white p-3">
             <div className="text-[32px] font-bold">程式專案</div>
             <div className="text-[16px] text-gray-600 ">這裡收錄我的程式學習過程</div>
