@@ -2,15 +2,18 @@
 import Image from "next/image"
 import Link from "next/link";
 import { TbActivity } from "react-icons/tb";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { IoIosMusicalNotes } from "react-icons/io";
+import { IoIosHome } from "react-icons/io";
 
 export default function Menu() {
   
   return (
     <>
-      <div className="bg-white w-[320px] h-full p-4">
+      <div className="h-full min-h-full w-full bg-white p-4">
 
         <Link href="/">  
-            HOME
+          <IoIosHome className="h-8 w-8" aria-hidden />
         </Link>
 
         <div className="flex justify-center items-center w-full">
@@ -22,13 +25,16 @@ export default function Menu() {
         <div className="text-center">名字</div>
         <div className="text-center">簡介</div>
 
-        <div className="flex gap-2">
-          {/* icons, links, images */}
-          <div>
-            <TbActivity />
+        <div className="flex w-full items-center justify-center gap-3">
+          <div className="flex items-center">
+            <TbActivity className="h-8 w-8" aria-hidden />
           </div>
-          <div>社群連結</div>
-          <div>社群連結</div>
+          <div className="flex items-center">
+            <FaSquareInstagram className="h-8 w-8" aria-hidden />
+          </div>
+          <div className="flex items-center">
+            <IoIosMusicalNotes className="h-8 w-8" aria-hidden />
+          </div>
         </div>
 
 

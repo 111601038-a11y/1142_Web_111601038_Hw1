@@ -1,11 +1,5 @@
-"use client"
-
-import Menu from "../../component/Menu";
-import Link from "next/link";
-
 export default function ProgrammingProject() {
-
-  let projectData = {
+  const projectData = {
     "1": {
       "name":"寵物用品店",
       "imageUrl": "/cat.png"
@@ -17,16 +11,8 @@ export default function ProgrammingProject() {
   };
 
   return (
-    <>
-      <div className="flex h-full">
-        <Link href="/" className="sm:hidden absolute left-2 top-2 bg-white">  
-            返回
-        </Link>
-        <div className="sm:block hidden">
-          <Menu />
-        </div>
-        <div className="bg-red-500 w-full">
-          <div className="bg-white h-full w-full p-3">
+    <div className="bg-red-500 min-h-full w-full">
+      <div className="h-full w-full bg-white p-3">
             <div className="text-[32px] font-bold">程式專案</div>
             <div className="text-[16px] text-gray-600 ">這裡收錄我的程式學習過程</div>
             
@@ -71,12 +57,8 @@ export default function ProgrammingProject() {
               <div className="bg-amber-50 rounded-2xl h-full flex justify-center items-center row-span-2">專案4</div>
               <div className="bg-amber-50 rounded-2xl h-40 flex justify-center items-center ">專案5</div>
               <div className="bg-amber-50 rounded-2xl h-40 flex justify-center items-center ">專案6</div>
-              <div className="bg-amber-50 rounded-2xl h-40 flex justify-center items-center ">專案7</div>
             </div>
           </div>
-        </div>
-      </div>
-
-    </>
+    </div>
   );
 }
