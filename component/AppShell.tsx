@@ -56,7 +56,9 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           <span className="text-sm font-medium text-gray-700">選單</span>
         </header>
 
-        <main className="min-h-0 flex-1 bg-sky-500/25">{children}</main>
+        <main className="min-h-0 flex-1">
+          <div className="min-h-full w-full">{children}</div>
+        </main>
       </div>
 
       {open ? (

@@ -8,7 +8,7 @@ type TextSection = {
 };
 type EducationSection = {
   title: string;
-  school: string;
+  schools: readonly string[];
   programs: readonly string[];
 };
 
@@ -22,20 +22,25 @@ const SECTIONS = [
   },
   {
     title: "主要學歷",
-    school: "國立政治大學",
+    schools: ["國立政治大學","國立政治大學"],
     programs: ["法律學系", "數位內容與科技學士學位學程"],
+  },
+  {
+    title: "其他經歷",
+    schools: ["法律服務社","搭蘆灣社","政植涯"],
+    programs: ["接待組", "三十週年主視覺規劃","副視覺設計長"],
   },
 ] as const satisfies readonly (TextSection | EducationSection)[];
 
 function isEducation(
   s: TextSection | EducationSection,
 ): s is EducationSection {
-  return "school" in s;
+  return "schools" in s;
 }
 
 /** 兩個區塊等高；圖片區與毛玻璃共用圓角 */
 const SECTION_CARD =
-  "flex min-h-[min(52vh,26rem)] flex-col rounded-xl border border-gray-100 bg-white px-5 py-6 shadow-md sm:min-h-[min(48vh,30rem)] sm:px-6 sm:py-8";
+  "flex min-h-[min(42vh,20rem)] flex-col rounded-xl border border-gray-100 bg-white px-4 py-4 shadow-md sm:min-h-[min(40vh,22rem)] sm:px-5 sm:py-5";
 
 export default function About() {
   return (
@@ -51,17 +56,17 @@ export default function About() {
                   {section.title}
                 </h2>
                 {isEducation(section) ? (
-                  <div className="mt-4 flex min-h-0 flex-1 gap-3 leading-relaxed text-gray-900">
-                    <span className="shrink-0 font-medium text-gray-900">
-                      {section.school}
-                    </span>
-                    <div className="min-w-0 space-y-1">
-                      {section.programs.map((line) => (
-                        <p key={line} className="break-words">
-                          {line}
+                  <div className="mt-4 min-h-0 flex-1 space-y-1 leading-relaxed text-gray-900">
+                    {section.schools.map((school, index) => (
+                      <div key={`${school}-${index}`} className="flex gap-3">
+                        <p className="w-28 shrink-0 text-right font-medium text-gray-900">
+                          {school}
                         </p>
-                      ))}
-                    </div>
+                        <p className="min-w-0 break-words">
+                          {section.programs[index] ?? ""}
+                        </p>
+                      </div>
+                    ))}
                   </div>
                 ) : (
                   <>

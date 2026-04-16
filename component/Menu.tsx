@@ -26,35 +26,53 @@ export default function Menu() {
           </div>
         </div>
 
-        <div className="text-center">呂芃慧</div>
+        <div className="mt-5 text-center text-2xl font-extrabold text-black">呂芃慧</div>
 
-        <div className="flex w-full items-center justify-center gap-3">
-          <div className="flex items-center">
+        <div className="flex w-full items-center justify-center gap-5 mt-5">
+          <a
+            href="https://www.strava.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-gray-700 transition-colors hover:text-orange-500"
+            aria-label="Strava"
+          >
             <TbActivity className="h-8 w-8" aria-hidden />
-          </div>
-          <div className="flex items-center">
+          </a>
+          <a
+            href="https://www.instagram.com/nordi_y_1120/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-gray-700 transition-colors hover:text-pink-500"
+            aria-label="Instagram"
+          >
             <FaSquareInstagram className="h-8 w-8" aria-hidden />
-          </div>
-          <div className="flex items-center">
+          </a>
+          <a
+            href="https://youtu.be/K5b5tOneB_o?si=Vuxx_hQqDU_F9npp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-gray-700 transition-colors hover:text-indigo-500"
+            aria-label="Music"
+          >
             <IoIosMusicalNotes className="h-8 w-8" aria-hidden />
-          </div>
+          </a>
         </div>
 
 
-        <Link href="/about">
-          <div className="bg-sky-500/50 p-[16px] rounded-md">關於我</div>
+        <Link href="/about" className="mt-5 block">
+          <div className="rounded-md bg-sky-500/50 p-[16px] text-center">關於我</div>
         </Link>
 
         <Link href="/hobby">
-          <div className="bg-sky-500/50 p-[16px] mt-2 rounded-md">我的興趣</div>
+          <div className="mt-2 rounded-md bg-sky-500/50 p-[16px] text-center">我的興趣</div>
         </Link>
 
         <Link href="/design">
-          <div className="bg-sky-500/50 p-[16px] mt-2 rounded-md">設計成果</div>
+          <div className="mt-2 rounded-md bg-sky-500/50 p-[16px] text-center">設計成果</div>
         </Link>
 
         <Link href="/project">
-          <div className="bg-sky-500/50 p-[16px] mt-2 rounded-md">文章創作</div>
+          <div className="mt-2 rounded-md bg-sky-500/50 p-[16px] text-center">文章創作</div>
         </Link>
 
 

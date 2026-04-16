@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="flex min-h-full w-full items-center justify-center p-6">
+    <div className="flex min-h-dvh w-full items-center justify-center p-6">
       <div className="relative w-full max-w-2xl overflow-hidden rounded-2xl border border-white/40 shadow-xl">
         <div
           className="absolute inset-0 bg-gradient-to-br from-sky-100/80 via-white/40 to-indigo-100/80"
